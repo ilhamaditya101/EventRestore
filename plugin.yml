@@ -1,0 +1,20 @@
+name: EventRestore
+version: 1.0.0
+main: me.ham.eventrestore.EventRestore
+api-version: '1.20'
+description: Per-player event inventory backup and claim GUI.
+author: ham
+
+commands:
+  event:
+    description: Event inventory commands
+    usage: /event <restore|claim|admin>
+    permission: eventrestore.use
+
+permissions:
+  eventrestore.use:
+    description: Use /event restore and /event claim
+    default: true
+  eventrestore.admin:
+    description: Inspect and manage player event backups
+    default: op
